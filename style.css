@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root{
+    --PurpleLigth: #302D43;
+    --PurpleDark: #282639;
+    --NeonGreen: #92CF48;
+    --GreyLight: #F4F6F9;
+    --GreyDark: #EAEDF3;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Monserrat", sans-serif;
+    background: var(--LightGrey);
+}
+
+#sideMenu{
+    background: var(--PurpleLigth);
+    max-width: 250px;
+    position: absolute;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+}
+
+#sideMenu .logo, .user-foto, p{
+    display: flex;
+    justify-content: center;
+}
+
+
+#sideMenu p{
+    color: var(--GreyDark);
+}
+
+nav{
+padding-top: 100px;
+}
+
+
+
+#sideMenu nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--GreyDark);
+    justify-content: center;
+    padding: 25px 25px 15px 25px;
+    font-weight: 300;
+}
+#sideMenu .logo img{
+    width: 80px;
+    height: 80px;
+}
+
+#sideMenu nav a.active{
+    background: var(--PurpleDark);
+    border-left: 4px solid var(--NeonGreen);
+    padding: 25px 30px 15px 25px;
+}
+
+header{
+    margin-left: 250px;
+    padding: 35px;
+    background: var(--PurpleDark);
+
+}
